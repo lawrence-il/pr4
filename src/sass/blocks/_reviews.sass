@@ -1,0 +1,63 @@
+.reviews 
+    position: relative
+    padding: 51px 0 65px 0
+    &__wrapper-slider
+        max-width: 800px
+        position: relative
+        margin: 31px auto
+    &__w1, &__w2
+        position: absolute
+        height: 120px
+        width: 40%
+        background: #ffffff
+        z-index: 999
+    &__w1
+        top: 0
+        left: 0
+    &__w2
+        top: 0
+        right: 0
+    &__title
+        text-align: center
+        font-size: 18px
+        line-height: 22px
+        font-weight: 700
+        margin-bottom: 8px
+    &__text
+        margin: 0 auto
+        text-align: center
+        font-size: 14px
+        font-weight: 300
+        max-width: 605px
+    &__wrapper-photo
+        margin: 0 auto
+        width: 114px
+        height: 114px
+        margin-bottom: 19px
+        img
+            height: 100%
+            width: 100%
+.slick
+    &-list
+        overflow: hidden
+    &-track
+        display: flex
+    &-prev, &-next
+        position: absolute
+        width: 20px;
+        height: 25px;
+        font-size: 0
+        border: none
+        z-index: 1000
+    &-prev
+        top: 18%;
+        left: 36%;
+        background: url('../img/reviews/arrow-prev.svg') center center/cover no-repeat
+    &-next
+        top: 18%;
+        right: 36%;
+        background: url('../img/reviews/arrow-next.svg') center center/cover no-repeat
+    &-slide
+        opacity: 0.3
+    &-active
+        opacity: 1

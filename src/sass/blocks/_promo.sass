@@ -1,0 +1,107 @@
+.promo
+    display: flex
+    background: url('../img/promo/background_1.jpg') center center/cover no-repeat
+    padding: 23px 0 82px 0
+    color: #ffff
+    position: relative
+    &__menu
+        display: flex
+        &-wrapper
+            display: flex
+            align-items: center
+            margin-bottom: 9px
+        &-item
+            display: block
+            padding: 0 14px 0 12px
+            font-size: 14px
+            font-weight: 400
+            list-style: none
+            color: #ffffff
+            border-right: 1px dashed #ffffff
+            cursor: pointer
+            &:hover
+                color: $main-color
+            &:last-child
+                border: none
+    &__menu-close
+        display: none
+    &__wrapper-logo
+        margin-right: 55px
+    &__logo
+        width: 96px
+        height: 100px
+        object-fit: cover   
+    &__official
+        display: inline-flex
+        flex-direction: column
+        justify-content: center
+        width: 210px
+        text-align: right
+        margin-right: 19px
+    &__tel
+        font-size: 19px
+        line-height: 24px
+        font-weight: 700
+        color: #ffffff
+    &__txt
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    &__title
+        text-align: center
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #ffffff;
+        margin-bottom: 22px
+    &__subtitle
+        text-align: center
+        font-size: 64px;
+        line-height: 1
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $main-color;
+        margin-bottom: 9px
+        &_second
+            font-size: 37px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff
+            margin-bottom: 38px
+    &__divider
+        position: relative
+        margin: 0 auto
+        width: 10px
+        height: 10px
+        background-color: #ffffff
+        border-radius: 100%
+        margin-bottom: 27px
+        &:before, &:after
+            content: ''
+            position: absolute  
+            width: 21.5vw
+            height: 2px
+            background-color: #ffffff
+            top: 4px
+            left: 22px
+            border-radius: 5px
+        &:after
+            transform: translate(-100%)
+            left: -12px
+    &__steps
+        display: flex
+        justify-content: space-between
+        text-align: center
+        
+    &__step
+        width: 260px
+        &-img
+            object-fit: cover
+            margin: 0 auto
+        &-txt
+            font-size: 16px
+            line-height: 22px
+            font-weight: 300
+            color: #ffffff
+    

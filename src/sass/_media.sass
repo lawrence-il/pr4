@@ -1,0 +1,264 @@
+@media (max-width: 1200px)
+    .container
+        width: 960px
+    .promo
+        &__wrapper-logo
+            margin-right: 25px
+        &__menu-item
+            padding: 0 10px 0 10px
+        &__tel
+            font-size: 14px
+        &__title 
+            margin-bottom: 12px
+        &__subtitle
+            margin-bottom: 12px
+            font-size: 60px
+        &__subtitle_second
+            font-size: 34px
+            margin-bottom: 32px
+    .btn__header, .promo__official
+        width: 125px
+    .btn__prices
+        bottom: -8%
+    .prices
+        &__wrapper-second:nth-child(n+4)
+            margin-top: 25px
+        &__wrapper-form
+            max-width: 300px
+        &__wrapper-input
+            margin-top: 15px
+        &__wrapper-consult
+            padding: 50px 0 50px
+        &__indent
+            top: -20%
+@media (max-width: 992px)
+    .container
+        width: 720px
+    .promo
+        padding: 23px 0 55px 0
+        &__header
+            position: relative
+            margin-bottom: 12px
+        &__hamburger
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            top: 25px
+            right: 10px
+            width: 50px
+            height: 50px
+            cursor: pointer
+        &__hamburger-lines
+            display: flex
+            justify-content: center
+            width: 40px
+            height: 2px
+            background: #fff
+            transition-duration: 0.5s
+            &:after
+                content: ''
+                position: absolute
+                width: 40px
+                height: 2px
+                top: 15px
+                background: #fff 
+            &:before
+                content: ''
+                position: absolute
+                top: 20px 
+                width: 40px
+                height: 2px
+                top: 33px
+                background: #fff
+        &__menu
+            justify-content: space-evenly
+        &__menu-wrapper
+            display: flex
+            padding: 65px 50px 50px
+            flex-direction: column
+            justify-content: space-between
+            position: fixed
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100%
+            background: $main-color
+            z-index: 2
+            overflow: auto
+            transition-duration:  0.8s
+            &_active
+                left: 0
+        &__menu-close
+            display: flex
+            position: absolute
+            justify-content: center
+            align-items: center
+            width: 50px
+            height: 50px
+            top: 15px
+            right: 15px
+            cursor: pointer
+            &:after,&:before
+                content: ''
+                position: absolute
+                width: 50px
+                height: 2px
+                background: #fff
+                transform: rotate(-45deg)
+            &:before
+                transform: rotate(45deg)
+        &__menu-item
+            font-size: 30px
+            font-weight: 700
+            border-right: none
+            &:hover
+                color: #fff
+        &__subtitle
+            font-size: 50px
+        &__subtitle_second
+            font-size: 30px
+        &__step
+            padding: 0 10px
+    .prices
+        &__wrapper-second:nth-child(n+3)
+            margin-top: 25px
+        &__wrapper-consult
+            margin: 0 20px
+    .our-work
+        &__item
+            width: 450px
+            margin-right: 0
+    .header-blocks
+        &__title
+            line-height: 32px
+            padding: 0 10px
+        &__txt
+            line-height: 16px
+            font-weight: 400
+    .prices
+        &__wrapper
+            justify-content: space-evenly
+        &__input
+            width: 225px
+    .last-questions
+        &__input
+            width: 230px
+        &__message
+            width: 700px
+    .footer
+        &__tel
+            font-size: 14px
+    .btn__footer
+        display: none
+
+@media (max-width: 768px)
+    .container
+        width: 540px
+    .btn__header
+        margin: 0 auto
+        transform: translateX(-50%)
+    .promo
+        background: url('../img/promo/background_1mob.jpg') center center/cover no-repeat
+        &__official
+            display: none
+        &__menu
+            justify-content: stretch
+        &__menu-item
+            font-size: 24px
+        &__title
+            line-height: 36px
+        &__subtitle
+            font-size: 37px
+        &__subtitle_second
+            font-size: 22px
+            line-height: 33px
+        &__steps
+            flex-wrap: wrap
+        &__step
+            padding: 10px 10px 0px
+        &__step-txt
+            font-size: 14px
+    .scheme-work__item    
+        margin: 10px auto 0
+        &:nth-child(4n+4)
+            margin-right: auto
+    .last-questions
+        &__window
+            max-width: 464px
+        &__wrapper-textarea
+            label
+                left: 18px
+        &__message
+            width: 400px
+    .footer
+        &__title
+            display: none
+@media (max-width: 576px)
+    .container
+        width: 100%
+        padding: 0 10px
+    .promo
+        &__title
+            font-size: 16px
+            line-height: 22px
+        &__subtitle
+            font-size: 28px
+        &__subtitle_second
+            font-size: 16px
+            line-height: 22px
+        &__steps
+            justify-content: center
+        &__header
+            margin-bottom: 16px
+        &__menu-item
+            text-align: center
+    .advant
+        &__title
+            font-size: 24px
+            margin-bottom: 45px
+        &__items
+            grid-template-columns: repeat(auto-fit, 400px)
+    .reviews
+        &__w1, &__w2
+            width: 32%
+        &__text
+            padding: 0 10px
+    .slick-prev
+        top: 15%
+        left: 22%
+    .slick-next
+        top: 15%
+        right: 22%
+    .last-questions
+        &__message
+            width: 275px
+        &__text-check
+            font-size: 11px 
+    .footer__creater-site
+        text-align: right
+    .policy
+        font-size: 12px
+        &__footer
+            font-size: 13px       
+    
+@media (max-width: 400px)
+    .promo__menu-wrapper    
+        width: 100%
+    .btn__header
+        width: 100px
+        font-size: 10px
+    .advant
+        &__items
+            grid-template-columns: repeat(auto-fit, 300px)
+            gap: 0
+        &__item
+            grid-template: repeat(2, minmax(80px, auto)) / 300px
+            justify-items: center
+            align-items: center
+        &__wrapper-txt
+            text-align: center
+    .prices
+        &__wrapper-second:nth-child(n+2)
+            margin-top: 25px
+            

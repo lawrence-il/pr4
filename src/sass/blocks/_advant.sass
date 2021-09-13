@@ -1,0 +1,37 @@
+.advant
+    padding: 57px 0 73px 0
+    background: #f3f3f3
+    &__title
+        text-align: center
+        font-family: Roboto;
+        font-size: 26px
+        line-height: 23px
+        font-weight: 700
+        text-transform: uppercase
+        color: #2e2e2e
+        margin-bottom: 31px
+    &__wrapper-img
+        height: 60px
+        img
+            width: 100%
+            object-fit: cover
+    &__items
+        display: grid
+        justify-content: center
+        grid-template: repeat(4, minmax(65px, auto)) / repeat(auto-fit, 535px)
+        grid-auto-rows: minmax(65px, auto)
+        gap: 36px 60px
+    &__item
+        display: grid
+        grid-template-columns: 62px auto
+        gap: 0 17px
+    &__subtitle
+        font-size: 16px
+        line-height: 16px
+        font-weight: 700
+        color: $main-color
+        margin-bottom: 8px
+    &__text
+        font-size: 14px
+        font-weight: 400
+        color: #3a3a3a
