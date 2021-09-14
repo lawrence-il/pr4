@@ -56,6 +56,7 @@ function validateForms(form) {
   });
 
 }
+validateForms('.prices__wrapper-form');
 validateForms('.last-questions__wrapper-form');
 
 const arrow = document.querySelector('.arrow-up');
@@ -65,7 +66,7 @@ document.addEventListener('scroll', () => {
   if (window.pageYOffset >= 1000 && opacity < 1) { // здесь нужно опасити, потому что без него при каждом скроле, 
                                                     // будет заново запускаться сетИнтервал(без этого можно сказать что клеарИнтервал не работает)
     arrow.style.display = 'flex';                  // if внизу защищает, только от бесконечно плюсования, при ПЕРВОМ скроле, НО не защищает, от повторного запуска сетинтервал
-    let show = setInterval(function () {           // при следующих скроллах
+    let show = setInterval(function () {           
       arrow.style.opacity = opacity;
       opacity += 0.01;
       if (opacity >= 1) {
