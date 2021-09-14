@@ -46,7 +46,7 @@ function validateForms(form) {
     messages: {
       name: "Пожалуйста, введите имя",
       text: "Пожалуйста, введите текст",
-      phone: "Пожалуйста, введите номер ",
+      phone: "Пожалуйста, номер ",
       policy: "",
       email: {
         required: "Пожалуйста, введите почту",
