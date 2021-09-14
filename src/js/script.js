@@ -5,14 +5,17 @@ const menu = document.querySelector('.promo__menu-wrapper');
 document.querySelector('.promo__hamburger').addEventListener('click', () => {
   if (!document.querySelector('.promo__menu-wrapper_active')) {
     menu.classList.add('promo__menu-wrapper_active');
+    document.documentElement.style.overflow = "hidden";
   } else {
     menu.classList.remove('promo__menu-wrapper_active');
+    document.documentElement.style.overflow = "auto";
   }
 });
 
 document.querySelector('.promo__menu-close').addEventListener('click', () => {
   if (document.querySelector('.promo__menu-wrapper_active')) {
     menu.classList.remove('promo__menu-wrapper_active');
+    document.documentElement.style.overflow = "auto";
   }
 });
 
