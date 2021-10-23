@@ -1541,6 +1541,7 @@ function details({
   prices.addEventListener('click', e => {
     btnsMore.forEach((btn, index) => {
       if (e.target === btn) {
+        // Если e.target(это ссылка на объект), это, та кнопка, которую, я сейчас перебираю, то возьми её индекс и навесь класс на элемент с таким же индексом 
         pricesItems[index].classList.add(classActive);
       }
     });
