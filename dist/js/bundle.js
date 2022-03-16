@@ -1485,32 +1485,19 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 function arrow(classArrow) {
   const arrow = document.querySelector(classArrow);
-  let opacity = 0;
   document.addEventListener('scroll', () => {
-    if (window.pageYOffset >= 1000 && opacity < 1) {
-      arrow.style.display = 'flex';
-      let show = setInterval(function () {
-        arrow.style.opacity = opacity;
-        opacity += 0.01;
-
-        if (opacity >= 1) {
-          clearInterval(show);
-        }
-      }, 80);
-    } else if (window.pageYOffset < 1000 && opacity > 0) {
-      let hide = setInterval(function afc() {
-        arrow.style.opacity = opacity;
-        opacity -= 0.01;
-
-        if (opacity < 0) {
-          clearInterval(hide);
-          arrow.style.display = 'none';
-        }
-      }, 80);
+    if (window.pageYOffset >= 1000 && arrow.style.opacity <= 1) {
+      arrow.style.opacity = 1;
+      arrow.style.visibility = 'visible';
+    } else if (window.pageYOffset < 1000 && arrow.style.opacity >= 0) {
+      arrow.style.opacity = 0;
+      arrow.style.visibility = 'hidden';
     }
 
     arrow.addEventListener('click', () => {
       document.documentElement.scrollTop = 0;
+      arrow.style.opacity = 0;
+      arrow.style.visibility = 'hidden';
     });
   });
 }
@@ -1541,7 +1528,7 @@ function details({
   prices.addEventListener('click', e => {
     btnsMore.forEach((btn, index) => {
       if (e.target === btn) {
-        // Если e.target(это ссылка на объект), это, та кнопка, которую, я сейчас перебираю, то возьми её индекс и навесь класс на элемент с таким же индексом 
+        // Если e.target(это ссылка на нажатый объект), это та кнопка, которую, я сейчас перебираю, то возьми её индекс и навесь класс на элемент с таким же индексом 
         pricesItems[index].classList.add(classActive);
       }
     });
@@ -1573,7 +1560,7 @@ function menu({
 }) {
   const menu = document.querySelector(selectorMenu);
   document.querySelector(menuOpen).addEventListener('click', () => {
-    if (!document.querySelector(classMenuActive)) {
+    if (!menu.querySelector(classMenuActive)) {
       menu.classList.add(classMenuActive.slice(1));
       document.documentElement.style.overflow = "hidden";
     } else {
@@ -1582,7 +1569,7 @@ function menu({
     }
   });
   document.querySelector(menuClose).addEventListener('click', () => {
-    if (document.querySelector(classMenuActive)) {
+    if (menu.querySelector(classMenuActive)) {
       menu.classList.remove(classMenuActive.slice(1));
       document.documentElement.style.overflow = "auto";
     }
